@@ -1,22 +1,27 @@
 package com.stackroute.Challenge3;
 
 class Car {
-private int wheels=4, noOfCylinder;
-private boolean engine= true;
-private String cylinderName;
-Car(int noOfWheels, boolean stateOfEngine)
-{
-    wheels=noOfWheels;
-    engine= stateOfEngine;
-}
+//    Declaration of variables
+ private int wheels=4, noOfCylinder;
+ private boolean engine= true;
+ private String cylinderName;
 
-// logic for constructor
+//getters for wheels and engine
+    public int getWheels() {
+        return wheels;
+    }
+
+    public boolean isEngine() {
+        return engine;
+    }
+
+//     logic for constructor
 public void cylinder(String name, int number) {
     this.cylinderName= name;
     this.noOfCylinder= number;
 
 }
-//getter and setter
+//      getters and setters
 
     public int getNoOfCylinder() {
         return noOfCylinder;
@@ -34,7 +39,7 @@ public void cylinder(String name, int number) {
         this.cylinderName = cylinderName;
     }
 
-// methods
+//      methods
     public void startEngine()
     {
         System.out.println("starts");
